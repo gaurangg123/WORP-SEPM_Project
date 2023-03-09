@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WORP Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WORP Login</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <span class="show-password" onclick="showPassword()">Show</span>
+                </div>
+            </div>
+            <button class="login-btn" onclick="login()">Login</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
