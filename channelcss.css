@@ -1,7 +1,7 @@
 /* Global styles */
 body {
-  background-color: #202225;
-  color: #fff;
+  background-color: #430073;
+  color: #0bfff3;
 }
 
 /* Tab styles */
@@ -11,7 +11,12 @@ body {
   align-items: center;
   height: 50px;
 }
-
+.home{
+  text-align: left;
+  display: flex;
+  color: coral;
+  text-decoration-color: darkorange;
+}
 .tab {
   padding: 10px;
   margin: 0 5px;
