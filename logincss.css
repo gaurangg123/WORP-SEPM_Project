@@ -229,8 +229,8 @@ input[type=text], input[type=password]{
   }
 
 button {
-    background-color: #030804;
-    color: white;
+    background-color: #000000;
+    color: rgb(200, 0, 93);
     padding: 14px 20px;
     border-radius: 5px;
     margin: 7px 0;
@@ -242,6 +242,7 @@ button:hover {
     opacity: 0.6;
     cursor: pointer;
 }
+
 
 .headingsContainer{
     text-align: center;
