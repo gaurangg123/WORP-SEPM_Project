@@ -19,27 +19,34 @@ h1 {
 	margin: 0;
 }
 
-main {
-	padding: 20px;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+li a {
+	display: block;
+	color: #ffffff;
+	padding: 10px 20px;
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+}
+
+li a:hover {
+	background-color: #8a2be2;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #483d8b;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 a {
 	color: #fff;
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-footer {
-	text-align: center;
-	padding: 20px;
-	background-color: #483d8b;
 }
