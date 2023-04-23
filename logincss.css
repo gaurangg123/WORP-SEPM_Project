@@ -243,6 +243,13 @@ button:hover {
     cursor: pointer;
 }
 
+.logo{
+  margin: 0 630px;
+}
+
+img{
+  height: 120px;
+}
 
 .headingsContainer{
     text-align: center;
