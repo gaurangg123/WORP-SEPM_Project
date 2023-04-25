@@ -11,7 +11,7 @@
         <img src="worplogo.png" alt="WORP Logo">
     </div>
     <br>
-      <form action="">
+      <form method="POST" action="login.php">
           
           <div class="headingsContainer">
               <h3>Sign in</h3>
@@ -28,20 +28,9 @@
   
              
               <label for="pswrd">Your password</label>
-              <input type="password" placeholder="Enter Password" name="pswrd" required>
-  
+              <input type="password" placeholder="Enter Password" name="password" required>
               
-              <div class="subcontainer">
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-              </div>
-  
-  
-              
-              <button type="submit"><a href="homehtml.html" style="color: white;">Login</a></button>
-  
-              
-              <p class="register">Not a member?  <a href="#">Register here!</a></p>
+              <button type="submit" style = "color: white;">Login</button>
   
           </div>
   
