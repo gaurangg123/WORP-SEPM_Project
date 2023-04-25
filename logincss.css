@@ -2,9 +2,7 @@
 body 
 {
   font-family:sans-serif; 
-  background: -webkit-linear-gradient(to right, #155799, #159957);  
-  background: linear-gradient(to right, #155799, #159957); 
-  color:whitesmoke;
+  background: linear-gradient(109.6deg, rgb(221, 62, 84) 11.2%, rgb(156, 76, 186) 100.2%);
 }
 
 
