@@ -2,12 +2,11 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "your_password";
-$dbname = "your_database";
+$password = "";
+$dbname = "registration";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-// Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -15,7 +14,7 @@ if (!$conn) {
 // Prepare statement
 $stmt = mysqli_prepare($conn, "INSERT INTO users (username, firstname, lastname, password, birthdate, email) VALUES (?, ?, ?, ?, ?, ?)");
 
-// Bind parameters
+
 mysqli_stmt_bind_param($stmt, "ssssss", $username, $firstname, $lastname, $password, $birthdate, $email);
 
 // Set parameters
