@@ -1,39 +1,27 @@
 <?php
 
-$servername = "localhost";
+$dbhost = "localhost";
 $username = "root";
 $password = "";
 $dbname = "login";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($dbhost, $username, $password, $dbname);
 
+$username = $_POST["username"];
+$fname = $_POST["firstname"];
+$lname = $_POST["lastname"];
+$password = $_POST["password"];
+$phone = $_POST["phone"];
+$email = $_POST["email"];
 
+echo '<h1>' .$username. '</h1>';
 
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if($conn->query("INSERT INTO users (user_name, first_name, last_name, password, email_id, phone_no) VALUES('$username', '$fname', '$lname', '$password', '$email', '$phone')")){
+	echo 'Data inserted';
+	echo '<br/>';
 }
 
-
-$username = $_POST['username'];
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$password = $_POST['password'];
-$birthdate = $_POST['dob'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-// Prepare statement
-$stmt = mysqli_prepare($conn, "INSERT INTO users (username, firstname, lastname, password, birthdate, phone_no, email) VALUES (?, ?, ?, ?, ?, ?, ?)");
+header("location:index.html");
 
 
-mysqli_stmt_bind_param($stmt, "sssssds", $username, $firstname, $lastname, $password, $birthdate, $phone, $email);
-
-// Set parameters
-
-// Execute statement
-mysqli_stmt_execute($stmt);
-
-
-echo "Registration successful.";
-
-mysqli_close($conn);
 ?>
